@@ -24,31 +24,31 @@ class User():
         return self.login_attempts
 
 
-class Admin(User):
-    def __init__(self, first_name, last_name, country):
-        super().__init__(first_name, last_name, country)
-        # self.privileges = ["can add post", "can delete post", "can ban user"]
-        self.privileges = Privileges()
-
-
-class Privileges():
-    def __init__(self):
-        self.privileges = ["can add post", "can delete post", "can ban user"]
-
-    def show_privileges(self):
-        print("You can do these:" + str(self.privileges))
-
-
-user1 = User('Cai', 'Ye', 'China')
-user2 = User('Seth', 'White', 'England')
-user3 = User('Lucy', 'Smith', 'American')
-
-user1.describe_user()
-user2.greet_user()
-print(user3.login_attempts)
-print(user3.increment_login_attempts())
-print(user3.increment_login_attempts())
-print(user3.reset_login_attempts())
-
-admin1 = Admin('admin', '1', 'none')
-admin1.privileges.show_privileges()
+# class Admin(User):
+#     def __init__(self, first_name, last_name, country):
+#         super().__init__(first_name, last_name, country)
+#         # self.privileges = ["can add post", "can delete post", "can ban user"]
+#         self.privileges = Privileges()
+#
+#
+# class Privileges():
+#     def __init__(self):
+#         self.privileges = ["can add post", "can delete post", "can ban user"]
+#
+#     def show_privileges(self):
+#         print("You can do these:" + str(self.privileges))
+#
+#
+# user1 = User('Cai', 'Ye', 'China')
+# user2 = User('Seth', 'White', 'England')
+# user3 = User('Lucy', 'Smith', 'American')
+#
+# user1.describe_user()
+# user2.greet_user()
+# print(user3.login_attempts)
+# print(user3.increment_login_attempts())
+# print(user3.increment_login_attempts())
+# print(user3.reset_login_attempts())
+#
+# admin1 = Admin('admin', '1', 'none')
+# admin1.privileges.show_privileges()

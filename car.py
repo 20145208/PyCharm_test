@@ -63,22 +63,22 @@ class ElectricCar(Car):
     def fill_gas_tank(self):
         print("This car doesn't have a gas tank!")
 
-
-my_new_car = Car('audi', 'a4', 2020)
-print(my_new_car.get_descriptive_name())
-
-my_tesla = ElectricCar("tesla", "model s", 2018)
-print(my_tesla.get_descriptive_name())
-
-my_new_car.odometer = 2223
-my_new_car.update_odometer(11118)
-my_new_car.increment_odometer(1222)
-
-my_new_car.read_odometer()
-my_new_car.fill_gas_tank()
-
-my_tesla.battery.describe_battery()
-my_tesla.battery.get_range()
-my_tesla.fill_gas_tank()
-my_tesla.battery.update_battery()
-my_tesla.battery.get_range()
+#
+# my_new_car = Car('audi', 'a4', 2020)
+# print(my_new_car.get_descriptive_name())
+#
+# my_tesla = ElectricCar("tesla", "model s", 2018)
+# print(my_tesla.get_descriptive_name())
+#
+# my_new_car.odometer = 2223
+# my_new_car.update_odometer(11118)
+# my_new_car.increment_odometer(1222)
+#
+# my_new_car.read_odometer()
+# my_new_car.fill_gas_tank()
+#
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+# my_tesla.fill_gas_tank()
+# my_tesla.battery.update_battery()
+# my_tesla.battery.get_range()
